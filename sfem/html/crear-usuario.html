@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Usuario - Hospital de Clínicas</title>
+    <link rel="stylesheet" href="../css/crear-usuario.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="barra-nav">
+        <div class="logo-nav">
+            <img src="../imgs/logo_clinicas.png" height="75px" alt="Logo Hospital de Clínicas">
+        </div>
+        <div class="btns-nav">
+            <a href="trazabilidad.html" class="btn-traza">
+                <span>&larr;</span> Volver al Sistema
+            </a>
+            <div class="info-user">
+                <div class="avatar">A</div>
+                <div class="user-info">
+                    <span class="user-label">Administrador</span>
+                    <span class="user-name">Usuario Ejemplo</span>
+                </div>
+            </div>
+            <div class="btn-cierre">
+                <a href="logout.php" class="btn-nav">Salir</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="principal">
+        
+        <section class="nuevo-doc">
+            <div class="titulo-sec">
+                <h2>Registrar Nuevo Usuario</h2>
+            </div>
+
+            <!-- MENSAJE DE ALERTA (EJEMPLO) -->
+            <!-- <div class="alerta alerta-exito">Usuario registrado exitosamente en el sistema.</div> -->
+
+            <form action="" method="POST">
+                
+                <div class="area-arch">
+                    <label for="cedula" class="titulo-area">Cédula</label>
+                    <input type="text" id="cedula" name="cedula" class="input-texto" placeholder="Ej: 12345678" required>
+                </div>
+
+                <div class="area-arch">
+                    <label for="nombre" class="titulo-area">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" class="input-texto" placeholder="Ej: Juan" required>
+                </div>
+
+                <div class="area-arch">
+                    <label for="apellido" class="titulo-area">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" class="input-texto" placeholder="Ej: Pérez" required>
+                </div>
+
+                <div class="area-arch">
+                    <label for="email" class="titulo-area">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" class="input-texto" placeholder="juan.perez@hospital.com" required>
+                </div>
+
+                <div class="area-arch">
+                    <label for="password" class="titulo-area">Contraseña</label>
+                    <input type="password" id="password" name="password" class="input-texto" placeholder="••••••••" required>
+                </div>
+
+                <div class="area-cat">
+                    <label for="id_rol" class="titulo-area">Rol del Usuario</label>
+                    <select id="id_rol" name="id_rol" class="selec-cat" required>
+                        <option value="" disabled selected>Seleccione un rol...</option>
+                        <option value="1">Administrador</option>
+                        <option value="2">Medico</option>
+                        <option value="3">Chofer</option>
+                    </select>
+                </div>
+
+                <div class="area-acc">
+                    <button type="submit" class="btn-guardar">
+                        <span>&#10010;</span> Registrar Usuario
+                    </button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Satisfacción - Hospital de Clínicas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/encuestas.css">
+</head>
+<body>
+
+    <header class="barra-nav">
+        <div class="logo-nav">
+            <img src="../imgs/logo_clinicas.png" height="75px">               
+        </div>
+
+        <button type="button" class="btn-cierre" title="Cerrar Sesión">
+                <a href="panel-paciente.html" class="btn-nav"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </button>
+    </header>
+
+    <main class="principal">
+        <section class="encuesta">
+            <div class="titulo">
+                <h2>Encuesta de Satisfacción y Comodidad</h2>
+            </div>
+
+            <p class="msj-encu">
+                Nos importa mucho tu experiencia navegando en nuestro portal. Por favor, tómate un momento para responder esta breve encuesta y dejarnos tus comentarios o recomendaciones.
+            </p>
+
+            <form>
+                <div class="preguntas">
+                    <label class="pregunta">1. ¿Qué tan fácil y cómoda te resultó la navegación por el sitio?</label>
+                    <div class="opciones-radio">
+                        <label>
+                            <input type="radio" name="nav" value="facil" checked> Fácil y cómoda
+                        </label>
+                        <label>
+                            <input type="radio" name="nav" value="no facil"> No tan fácil y cómoda
+                        </label>
+                        <label>
+                            <input type="radio" name="nav" value="dificil"> Difícil y poco cómoda
+                        </label>
+                    </div>
+                </div>
+
+                <div class="preguntas">
+                    <label class="pregunta">2. ¿Encontraste fácilmente la información o procedimiento médico que buscabas?</label>
+                    <div class="opciones-radio">
+                        <label>
+                            <input type="radio" name="found_info" value="si" checked> Sí, totalmente
+                        </label>
+                        <label>
+                            <input type="radio" name="found_info" value="parcial"> Parcialmente
+                        </label>
+                        <label>
+                            <input type="radio" name="found_info" value="no"> No con facilidad
+                        </label>
+                    </div>
+                </div>
+
+                <div class="preguntas">
+                    <label class="pregunta">3. Sugerencias o recomendaciones para mejorar el sitio:</label>
+                    <textarea class="area-txt" placeholder="Escribe aquí cualquier comentario, sugerencia o aspecto que te gustaría que mejoremos..."></textarea>
+                </div>
+
+                <div class="btns">
+                    <button type="submit" class="btn-submit">Enviar Encuesta</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

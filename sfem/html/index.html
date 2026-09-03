@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital de Clínicas - Iniciar Sesión</title>
+    <!-- CON HREF PEGAS EL LINK DE ALGO, EN ESTE CASO ES UNA TIPOGRAFIA (Inter), DEL 300 AL 600 SON EL TIPOS DE GROSOR, REL INDICA QUE ES UN ARCHIVO CSS-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+    <div class="lado-izq">
+        <div class="logo-clinicas">
+            <img src="../imgs/logo_clinicas.png" alt="Logo del clinicas" height="150px">
+        </div>
+
+        <h1 class="titulo-izq">Excelencia clínica y calidez humana a su servicio</h1>
+    </div>
+
+    <div class="parte-login">
+        <div class="login">            
+            <img src="../imgs/logo_clinicas.png" alt="Logo del clinicas" height="100px">
+            <h2 class="form-title">Bienvenido</h2>
+            <p class="form-subtitle">Por favor, ingrese sus credenciales para acceder al sistema clínico.</p>
+
+            <form action="gestor-documentos.html" method="GET">
+    
+                <label>Correo Electrónico / Cédula</label><i class="fa-regular fa-envelope"></i>
+                <input type="text" placeholder="correo@ejemplo.com o cédula" required>
+
+                <label>Contraseña</label><i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Ingrese su contraseña" required><i class="fa-regular fa-eye"></i>
+    
+                <a href="#" class="forgot-link">¿Olvidó su contraseña?</a>
+
+                <button type="submit" class="btn-GD">Iniciar Sesión</button>
+                <a href="panel-paciente.html" class="btn-PP">Portal de Pacientes</a>
+
+            </form>
+
+            <div class="soporte">
+                ¿Necesita ayuda técnica? <a href="#">Contacte a Soporte de TI</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
