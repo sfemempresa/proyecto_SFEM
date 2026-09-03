@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal del Paciente - Hospital de Clinicas</title>
+    <!-- ESTE HREF ES SOLO UNA FUENTE (Inter), LOS NUMEROS SON EL GROSOR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/estiloPP.css">
+</head>
+<body>
+
+    <header class="barra-nav">
+        <div class="logo-nav">
+            <img src="../imgs/logo_clinicas.png" height="75px">
+        </div>
+
+        <div class="titulo-nav">PORTAL DE PACIENTES</div>
+
+        <div class="btns-nav">
+            <a href="encuestas.php" class="btn-encuesta"><i class="fa-regular fa-clipboard"></i> Encuesta de Satisfacción</a>
+
+            <button type="button" class="btn-cierre" title="Cerrar Sesión">
+                <a href="panel-paciente.php" class="btn-nav"><i class="fa-solid fa-right-from-bracket"></i></a>
+            </button>
+        </div>
+    </header>
+
+    <main class="principal">
+
+        <section class="bienvenida">
+            <div class="bienv-txt">
+                <h2>Bienvenido a su Portal Clinico</h2>
+                <p>Aqui puede consultar la documentacion medica y guias preparatorias asignadas por su equipo medico.</p>
+            </div>
+        </section>
+
+        <!-- CATEGORIAS -->
+        <section class="portal">
+            <div class="titulo-area">
+                <h2>CATEGORIAS DE DOCUMENTACION</h2>
+            </div>
+
+            <div class="categorias"> 
+
+                <div class="categoria-1">
+                    <div class="cate-info">
+                        <h3>Categoria 1</h3>
+                    </div>
+                </div>
+
+                <div class="categoria-2">
+                    <div class="cate-info">
+                        <h3>Categoria 2</h3>
+                    </div>
+                </div>
+
+                <div class="categoria-3">
+                    <div class="cate-info">
+                        <h3>Categoria 3</h3>
+                    </div>
+                </div>
+
+                <div class="categoria-4">
+                    <div class="cate-info">
+                        <h3>Categoria 4</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DETALLES DE LAS CATEGOERIAS -->
+            <div class="cate-detal">
+                    <div class="titulo-sec">
+                        <i class="fa-solid fa-folder-open detail-icon"></i>
+                        <div>
+                            <p>Indicaciones cargadas por su medico tratante</p>
+                        </div>
+                    </div>
+
+                <div class="tabla-pp">
+                    <table class="edit-tabla">
+                        <thead>
+                            <tr>
+                                <th>DOCUMENTO</th>
+                                <th>MEDICO RESPONSABLE</th>
+                                <th>FECHA DE PUBLICACION</th>
+                                <th>DESCRIPCION / NOTAS</th>
+                                <th>ACCIONES</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="doc-file-info">
+                                        <i class="fa-solid fa-file-pdf file-icon pdf"></i>
+                                        <span class="doc-name">Instrucciones_Ayuno_Prequirurgico.pdf</span>
+                                    </div>
+                                </td>
+                                <td>Dr. Serrano</td>
+                                <td>24/08/2026</td>
+                                <td>Indicaciones de ayuno de 8 horas previas a la intervencion quirurgica.</td>
+                                <td>
+                                    <a href="#" class="btn-desc">
+                                        <i class="fa-solid fa-download"></i> Descargar
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="doc-file-info">
+                                        <i class="fa-solid fa-file-pdf file-icon pdf"></i>
+                                        <span class="doc-name">Protocolo_Ingreso_Hospitalario.pdf</span>
+                                    </div>
+                                </td>
+                                <td>Dra. Martinez</td>
+                                <td>20/08/2026</td>
+                                <td>Requisitos y documentacion a presentar al momento de la admision.</td>
+                                <td>
+                                    <a href="#" class="btn-desc">
+                                        <i class="fa-solid fa-download"></i> Descargar
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="doc-file-info">
+                                        <i class="fa-solid fa-file-word file-icon word"></i>
+                                        <span class="doc-name">Guia_Alimentacion_Previa.docx</span>
+                                    </div>
+                                </td>
+                                <td>Dr. Serrano</td>
+                                <td>15/08/2026</td>
+                                <td>Dieta blanda sugerida 48 horas antes del procedimiento.</td>
+                                <td>
+                                    <a href="#" class="btn-desc">
+                                        <i class="fa-solid fa-download"></i> Descargar
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
