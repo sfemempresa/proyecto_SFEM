@@ -13,6 +13,9 @@ Pasos para ejecutar el programa:
 - Iniciar los servicios de Apache y MySQL
 - Apretar el boton ADMIN en la linea de MySQL
   (sera redirigido a phpMyAdmin)
+- Verificar que esta parado sobre la base de datos hospital_clinicas
+- Ir luego al apartado SQL en la barra de navegacion (parte de arriba) y pegar la tabla en el texto BD
+- Luego darle al boton continuar  
 - Luego en el buscador debe de pegar el siguiente enlace
   http://localhost/sfem/php/temporal.php
 - Una vez creado el rol de admin, debe pegar este enlace
